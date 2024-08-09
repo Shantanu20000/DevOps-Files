@@ -1,3 +1,4 @@
+# Function to perform basic arithmetic operations
 def arithmetic_operations(a, b):
     addition = a + b
     subtraction = a - b
@@ -21,3 +22,4 @@ try:
 
 except ValueError:
     print("Invalid input. Please enter numeric values.")
+
