@@ -1,0 +1,25 @@
+pipeline{
+    agent any
+    stages{
+        stage ("Pull SourceCode"){
+            step {
+                echo "Pull Successfully"
+            }    
+        }
+        stage ("Build SourceCode"){
+            step {
+                echo "Build Successfully"
+            }    
+        }
+        stage ("Test SourceCode"){
+            step {
+                echo "Test Successfully"
+            }    
+        }
+        stage ("Deploy SourceCode"){
+            step {
+                echo "Deploy Successfully"
+            }    
+        }
+    }
+}
