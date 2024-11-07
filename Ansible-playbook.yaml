@@ -1,0 +1,17 @@
+---
+- name: Install & Start Apache Web Server
+  hosts: webservers
+  become: yes  # Ensures sudo privileges
+
+  tasks:
+    - name: Install Apache
+      apt:
+        name: apache2
+        state: present
+    - name: Install Apache on RedHat.
+      yum:
+        name: httpd
+        state: present
+   
+
+    
